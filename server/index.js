@@ -29,3 +29,12 @@ app.put('/articles/:article', function(req, res){
   //the put will include the article id in the request.params
   article.update(req, res)
 })
+
+app.get('/articles', function(req, res){
+  article.get(req, res)
+})
+
+app.delete('/articles/:article', function(req, res){
+  //the delete will include the article id in the request.params
+  article.delete(req, res)
+})

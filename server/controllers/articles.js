@@ -13,3 +13,19 @@ exports.get = (request, response) => {
   .then(result => response.status(200).json(result))
   .catch((err) => console.log("article.get error", err));
 };
+
+exports.update = (request, response) => {
+  Article.findById(request.params.article).exec()
+  .then((data) => {
+    const doc = data;
+    doc.title = request.body.title;
+    doc.author = request.body.author;
+    doc.date = request.body.date;
+    doc.articalBody = request.body.articalBody;
+    return doc.save();
+  })
+  .then((result) => {
+    response.status(200).json(result);
+  })
+  .catch((err) => console.log("article.update error", err));
+};

@@ -29,3 +29,10 @@ exports.update = (request, response) => {
   })
   .catch((err) => console.log("article.update error", err));
 };
+
+exports.delete = (request, response) => {
+  Article.findById(request.params.article).exec()
+  .then(doc => doc.remove())
+  .then(doc => response.status(200).json(doc))
+  .catch((err) => console.log("article.delete error", err));
+};

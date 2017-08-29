@@ -1,4 +1,3 @@
-//articles.js
 const Article = require('../models/articles.js');
 
 exports.create = (request, response) => {

@@ -8,5 +8,5 @@ Angular Challenge is a simple full stack application usng the MEAN tech stack, b
 
 ## Technologies
   1. [Express](https://expressjs.com/) / [Node](https://nodejs.org/en/n)
-  2. Angular
+  2. [Angular](https://angular.io/)
 

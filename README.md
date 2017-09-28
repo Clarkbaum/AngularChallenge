@@ -15,13 +15,13 @@ Angular Challenge is a simple full stack application usng the MEAN tech stack, b
 open a new tab and run
 
 ```
-npn run server
+npm run server
 ```
 
 open another tab and run
 
 ```
-np run client
+npm run client
 ```
 
 open another tab and run 

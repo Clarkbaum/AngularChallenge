@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Clarkbaum/AngularChallenge/issues"
   },
-  "homepage": "https://github.com/Clarkbaum/AngularChallenge#readme"
+  "homepage": "https://github.com/Clarkbaum/AngularChallenge#readme",
+  "dependencies": {
+    "mongoose": "^4.11.13"
+  }
 }

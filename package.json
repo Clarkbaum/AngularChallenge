@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Clarkbaum/AngularChallenge#readme",
   "dependencies": {
+    "express": "^4.16.0",
     "mongoose": "^4.11.13"
   }
 }

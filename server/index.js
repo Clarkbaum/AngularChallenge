@@ -22,6 +22,7 @@ app.use(function(req, res, next) {
 });
 
 app.post('/articles', function(req, res){
+  //post new articles into database. expects body with title, author, date, and body
   article.create(req, res)
 })
 
@@ -31,6 +32,7 @@ app.put('/articles/:article', function(req, res){
 })
 
 app.get('/articles', function(req, res){
+  //retrieves articles from database
   article.get(req, res)
 })
 
@@ -40,10 +42,12 @@ app.delete('/articles/:article', function(req, res){
 })
 
 app.get('*', function(req, res){
+  //catch for a endpoint i dont support
   console.log("NOT FOUND");
   res.status(404)
 })
 
 app.listen('8000', function(){
+  //which port i listen to
   console.log('listening on port 8000');
 })

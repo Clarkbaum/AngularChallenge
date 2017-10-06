@@ -5,3 +5,6 @@ angular.module('challenge', [])
 .factory ('', function() {})
 .run(function () {})
 */
+const angular = require('angular');
+
+angular.module('app', []);

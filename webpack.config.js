@@ -6,16 +6,13 @@ const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 });
 
 module.exports = {
-  entry: __dirname + '/client/index.js',
+  entry: __dirname + '/client/app/app.js',
   module:{
     loaders: [
       {
-        test: /\.jsx?$/,      //both js and jsx files
+        test: /\.js$/,      //both js and jsx files
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015']
-        }
+        loader: 'babel-loader'
       },
       {
         test: /\.(jpg|png|svg)$/,

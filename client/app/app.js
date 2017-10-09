@@ -5,6 +5,11 @@ angular.module('challenge', [])
 .factory ('', function() {})
 .run(function () {})
 */
-const angular = require('angular');
+import 'bootstrap/dist/css/bootstrap.css';
 
-angular.module('app', []);
+import angular from 'angular';
+import uirouter from 'angular-ui-router';
+
+import routing from './app.config';
+
+angular.module('app', [uirouter]);

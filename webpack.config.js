@@ -6,7 +6,7 @@ const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 });
 
 module.exports = {
-  entry: __dirname + '/client/app/app.js',
+  entry: __dirname + '/client/app.js',
   module:{
     loaders: [
       {
@@ -20,6 +20,10 @@ module.exports = {
         options: {
           limit: 25000
         }
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style!css!sass'
       }
     ]
   },

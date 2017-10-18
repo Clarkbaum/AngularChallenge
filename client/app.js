@@ -1,10 +1,3 @@
-//app.js
-/*
-angular.module('challenge', [])
-.config (function() {})
-.factory ('', function() {})
-.run(function () {})
-*/
 //trouble importing this but i dont really need it for the moment
 //import 'bootstrap/dist/css/bootstrap.css';
 
